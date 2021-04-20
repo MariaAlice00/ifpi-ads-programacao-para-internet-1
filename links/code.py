@@ -33,7 +33,7 @@ while resposta == True:
 
     link_escolhido = lista_links[num_link - 1]
     print()
-    print(f'\nLink escolhido: {link_escolhido}\n')
+    print(f'Link escolhido: {link_escolhido}\n')
 
     response_link = requests.get(link_escolhido)
 
@@ -47,6 +47,7 @@ while resposta == True:
         word_right = 0
         left = ''
         right = ''
+
         for word in text:
             if word == chave:
                 pos = text.index(word) # onde está palavra no texto, posição
@@ -74,12 +75,16 @@ while resposta == True:
                     right += ' ' + text[pos + c]
 
 
-                print('>>> {} {} {}'.format(new_left, word, right))
+                print('>>> {} {}{}'.format(new_left, word, right))
         
     r = int(input('\nQuer continuar?[1 - sim / 2 - não] >>> '))
     if r == 2:
         break
+    
+    print()
+
 
 print('FIM')
+
 # https://www.reddit.com/r/investimentos/
 # 6 - valores
