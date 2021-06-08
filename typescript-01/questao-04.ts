@@ -1,5 +1,4 @@
-/* a) Crie uma enum chamada DiasSemana com os valores representando os dias da semana segunda a 
-domingo;*/
+/* a) Crie uma enum chamada DiasSemana com os valores representando os dias da semana segunda a domingo;*/
 
 enum DiasSemana {
     um = "domingo",
@@ -11,9 +10,8 @@ enum DiasSemana {
     sete = "sábado"
 }
 
-/* b) Crie um namespace com mesmo nome e dentro dele crie uma função chamada isDiaUtil recebe um 
-parâmetro do tipo DiasSema e retorna false se for um sábado ou domingo e retorna true caso 
-contrário; */
+/* b) Crie um namespace com mesmo nome e dentro dele crie uma função chamada isDiaUtil recebe um parâmetro do tipo DiasSema e retorna false se for um sábado ou 
+domingo e retorna true caso contrário; */
 
 namespace DiasSemana {
     function isDiaUtil(dia: DiasSemana): boolean {
