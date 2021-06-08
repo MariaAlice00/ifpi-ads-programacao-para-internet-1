@@ -25,6 +25,7 @@ class Transacao {
     }
 }
 
+// d) Instancie uma classe Transacao e teste seus métodos
 const dinheiro = new Transacao(1900, 10);
 console.log(dinheiro.getValor);
 console.log(dinheiro.getDesconto);
